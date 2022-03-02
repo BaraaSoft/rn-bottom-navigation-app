@@ -1,7 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomeStack from "./stacks/HomeStack";
+import MainStack from "./stacks/MainStack";
 
 
 
@@ -13,7 +13,7 @@ const RootStack = createStackNavigator();
 const StackNavigator = () => {
   return (
     <RootStack.Navigator initialRouteName="HomeScreen">
-      <RootStack.Screen component={HomeStack} name="HomeStack" options={{headerShown:false}} />
+      <RootStack.Screen component={MainStack} name="MainStack" options={{headerShown:false}} />
     </RootStack.Navigator>
   );
 };

@@ -2,14 +2,14 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home,{navigationOptions} from "../../screens/Home";
-import {APP_SCREENS} from '../../screens/screens'
+import {APP_SCREENS} from '../../screens/screens';
 
 
 
 // const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const HomeStack = () => {
+const MainStack = () => {
   return (
     <Tab.Navigator initialRouteName={APP_SCREENS.HomeScreen}>
         <Tab.Screen 
@@ -21,4 +21,4 @@ const HomeStack = () => {
   );
 };
 
-export default HomeStack;
+export default MainStack;
