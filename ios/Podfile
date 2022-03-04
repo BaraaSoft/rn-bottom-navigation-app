@@ -12,6 +12,8 @@ target 'ablrChallenge' do
     :hermes_enabled => false
   )
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'ablrChallengeTests' do
     inherit! :complete
     # Pods for testing
