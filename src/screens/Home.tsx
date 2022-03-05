@@ -52,8 +52,6 @@ export const navigationOptions = () => {
     return {
       headerTitle: "Home",
       headerShown: true,
-      balance: 0,
-      payroll: 0,
       isVisible: false,
     };
 };
