@@ -1,33 +1,20 @@
-import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import React,{Component} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import StackNavigator from './navigations/StackNavigator';
+import {setTopLevelNavigator} from "./services/navigationService";
 
-const App = () => {
-  
 
-  return (
-    <NavigationContainer>
-<StackNavigator/>
-    </NavigationContainer>
-  );
-};
+class App extends Component{
+
+  render(){
+    return(
+      <NavigationContainer ref={setTopLevelNavigator}>
+        <StackNavigator/>
+      </NavigationContainer>
+    )
+  }
+}
+
 
 
 
