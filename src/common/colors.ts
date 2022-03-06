@@ -14,5 +14,6 @@ export const colors ={
         black10: "#0000001A",
         black20: "#B7B7B7",
         black40: "rgba(255, 255, 255, 0.4)",
+        link:'#3651e6'
     }
 }
