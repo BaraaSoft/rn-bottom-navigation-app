@@ -1,4 +1,4 @@
-import { Animated, Dimensions, Image, Text, TouchableOpacity } from "react-native";
+import { Animated, Dimensions, Image, Text, TouchableOpacity,StyleSheet } from "react-native";
 import styled from "styled-components";
 import { colors } from "../common/colors"
 
@@ -40,6 +40,30 @@ export const TabIcon = styled(Image)<IconProps>`
   width: 24px;
   height: 24px;
 `;
+
+
+export const iconStyling = StyleSheet.create({
+    scanStyle:{
+      backgroundColor:colors.main.primary,
+      borderRadius:100,
+      borderWidth:1,
+      padding: 10,
+      borderColor:colors.main.primary,
+      shadowColor: colors.main.primary,
+      shadowOffset: {width: -1, height: 5},
+      shadowOpacity: 0.6,
+      shadowRadius: 4,
+    }
+})
+
+export const screenStyling = StyleSheet.create({
+    tabbarStyle:{
+        shadowColor: colors.main.gray,
+        shadowOffset: {width: -2, height: -6},
+        shadowOpacity: 0.2,
+        shadowRadius: 15,
+    }
+})
 
 
 
