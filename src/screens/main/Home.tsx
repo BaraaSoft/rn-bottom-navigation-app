@@ -4,12 +4,14 @@ import {View,Text} from 'react-native';
 
 
 
-const Buy = ()=>{
+const Home = ()=>{
     return(
         <View>
-            <Text>BUY SCREEN</Text>
+            <Text>Home SCREEN</Text>
         </View>
     )
 }
 
-export default Buy
+export default Home
+
+

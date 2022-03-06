@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   SafeAreaView,
@@ -57,7 +56,7 @@ export const navigationOptions = () => {
 };
 
 
-const Home = ()=>{
+const Buy = ()=>{
     const isDarkMode = useColorScheme() === 'dark';
     const backgroundStyle = {
         backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -115,4 +114,4 @@ const styles = StyleSheet.create({
 });
  
 
-export default Home
+export default Buy
