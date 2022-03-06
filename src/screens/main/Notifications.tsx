@@ -1,14 +1,31 @@
 import React from "react";
-import {View,Text} from 'react-native';
-
-
+import {TouchableOpacity} from 'react-native';
+import { Title,Container,ScrollableList,Link } from "./Notifications.style";
+import { navigate } from "../../services/navigationService";
+import { TransactionModel } from "types/models";
+import { transactionsList } from "../../../__mock__/data";
 
 
 const Notifications = ()=>{
+    const onPress = (item:TransactionModel)=>{
+        navigate("TransactionStack","TransactionItemScreen",item)
+    }
     return(
-        <View>
-            <Text>Notifications SCREEN</Text>
-        </View>
+        <Container>
+            <Title>Transactions screen</Title>
+            <ScrollableList>
+                {
+                  transactionsList.filter(x=>x.notification_read == false).map(item=>{
+                      return(
+                          <TouchableOpacity style={{padding:8}} onPress={onPress.bind(null,item)} >
+                                <Link>Unread notifications - Transactions ID {item.id}</Link>
+                          </TouchableOpacity>
+                      )
+                  })  
+                }
+            </ScrollableList>
+            
+        </Container>
     )
 }
 
