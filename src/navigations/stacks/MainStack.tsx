@@ -1,9 +1,9 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Home,{navigationOptions} from "../../screens/Home";
+import Buy,{navigationOptions} from "../../screens/main/Buy";
 import {APP_SCREENS} from "../../screens/screens";
-import {Buy,Profile,Transactions,Notifications,Scan} from '../../screens'
+import {Home,Profile,Transactions,Notifications,Scan} from '../../screens'
 import TabBar from "../../components/TabBar";
 
 
