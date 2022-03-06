@@ -1,14 +1,21 @@
 import React from "react";
-import {View,Text} from 'react-native';
+import { NavigationScreen } from "types/navigation";
+import {TransactionModel}from "types/models";
+import { Container ,Title} from "./TransactionItemScreen.style";
 
 
 
+export interface TransactionItemScreenProps{
+    navigation: NavigationScreen;
+    route:any
+}
 
-const TransactionItemScreen = ()=>{
+const TransactionItemScreen = (props:TransactionItemScreenProps)=>{
+    const transcItem:TransactionModel = props.route.params
     return(
-        <View>
-            <Text>Transaction Item Screen</Text>
-        </View>
+        <Container>
+            <Title>Transaction Item ID - {transcItem.id}</Title>
+        </Container>
     )
 }
 

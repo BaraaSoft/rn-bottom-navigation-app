@@ -9,8 +9,6 @@ import TransactionStack from "./stacks/TransactionStack";
 
 const RootStack = createStackNavigator();
 
-
-
 const StackNavigator = () => {
   return (
     <RootStack.Navigator initialRouteName="HomeScreen">
