@@ -7,7 +7,7 @@ import {View,Text} from 'react-native';
 const Scan = ()=>{
     return(
         <View>
-            <Text>Scan SCREEN</Text>
+            <Text>Scan screen</Text>
         </View>
     )
 }

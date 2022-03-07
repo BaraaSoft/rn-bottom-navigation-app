@@ -7,7 +7,7 @@ import {View,Text} from 'react-native';
 const Profile = ()=>{
     return(
         <View>
-            <Text>Profile SCREEN</Text>
+            <Text>Profile screen</Text>
         </View>
     )
 }

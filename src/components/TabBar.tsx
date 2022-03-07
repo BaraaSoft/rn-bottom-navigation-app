@@ -50,7 +50,8 @@ const TabBar = (props: BottomTabBarProps) => {
         const focused = index === props.state.index;
         const { name,params} = tab;
         return (
-          <TabButton focused={focused} key={tab.key} onPress={handleTabPress(tab.name)}>
+          <TabButton testID="TabButton"
+            accessibilityLabel={`${name} tab button`} focused={focused} key={tab.key} onPress={handleTabPress(tab.name)}>
             {renderIcon(name,focused)}
             <TabLabelText focused={focused}>
               {TabName[name]}

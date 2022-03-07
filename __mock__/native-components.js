@@ -40,13 +40,6 @@ jest.doMock("moment", () => {
   return mockMoment;
 });
 
-// jest.mock("components", () => {
-//   const components = jest.requireActual("components");
-//   components.BottomDrawer = MockView;
-
-//   return components;
-// });
-
 Alert.alert = jest.fn();
 
 Animated.start = jest.fn((callback) => {
