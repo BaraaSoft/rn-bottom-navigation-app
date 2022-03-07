@@ -18,7 +18,7 @@ const Transactions = ({navigation}:any)=>{
                 {
                   transactionsList.map(item=>{
                       return(
-                          <TouchableOpacity key={item.id} style={{padding:8}} onPress={onPress.bind(null,item)} >
+                          <TouchableOpacity accessibilityLabel={`transaction button with id ${item.id}`} key={item.id} style={{padding:8}} onPress={onPress.bind(null,item)} >
                                 <Link>Transactions {item.id}</Link>
                           </TouchableOpacity>
                          
