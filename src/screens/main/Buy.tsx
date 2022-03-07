@@ -49,7 +49,7 @@ const Section: React.FC<{
 
 export const navigationOptions = () => {
     return {
-      headerTitle: "Home",
+      headerTitle: "Ablr",
       headerShown: true,
       isVisible: false,
     };

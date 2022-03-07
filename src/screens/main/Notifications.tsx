@@ -6,6 +6,8 @@ import { TransactionModel } from "types/models";
 import { transactionsList } from "../../../__mock__/data";
 
 
+
+
 const Notifications = ()=>{
     const onPress = (item:TransactionModel)=>{
         navigate("TransactionStack","TransactionItemScreen",item)
@@ -17,7 +19,7 @@ const Notifications = ()=>{
                 {
                   transactionsList.filter(x=>x.notification_read == false).map(item=>{
                       return(
-                          <TouchableOpacity style={{padding:8}} onPress={onPress.bind(null,item)} >
+                          <TouchableOpacity testID="UnreadNotification" accessibilityLabel={`Unread notification button with id ${item.id}`} key={item.id} style={{padding:8}} onPress={onPress.bind(null,item)} >
                                 <Link>Unread notifications - Transactions ID {item.id}</Link>
                           </TouchableOpacity>
                       )

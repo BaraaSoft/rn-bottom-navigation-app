@@ -1,5 +1,4 @@
 import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import MainStack from "./stacks/MainStack";
 import TransactionStack from "./stacks/TransactionStack";
