@@ -8,6 +8,7 @@
     "start": "react-native start",
     "clean": "npm start -- --reset-cache",
     "test": "jest --silent",
+    "test:update":"jest --silent --coverage --updateSnapshot",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {

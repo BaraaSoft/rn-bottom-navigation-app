@@ -14,7 +14,7 @@ const Profile = ()=>{
     return(
         <Container>
             <Title>Profile screen</Title>
-            <TouchableOpacity accessibilityLabel="Goto notifications button" onPress={onPress} >
+            <TouchableOpacity accessibilityLabel="notifications button" onPress={onPress} >
                 <Link>Go to Notifications</Link>
             </TouchableOpacity>
         </Container>
