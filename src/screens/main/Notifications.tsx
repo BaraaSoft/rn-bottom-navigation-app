@@ -12,7 +12,7 @@ const Notifications = ()=>{
     }
     return(
         <Container>
-            <Title>Transactions screen</Title>
+            <Title>Notifications screen</Title>
             <ScrollableList>
                 {
                   transactionsList.filter(x=>x.notification_read == false).map(item=>{

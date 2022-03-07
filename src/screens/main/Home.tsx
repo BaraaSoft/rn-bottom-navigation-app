@@ -14,7 +14,7 @@ const Home = ()=>{
     return(
         <Container>
             <Title>Home screen</Title>
-            <TouchableOpacity onPress={onPress} >
+            <TouchableOpacity accessibilityLabel="Goto notifications button" onPress={onPress} >
                 <Link>Go to Notifications</Link>
             </TouchableOpacity>
         </Container>
