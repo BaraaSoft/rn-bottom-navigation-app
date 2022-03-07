@@ -1,0 +1,53 @@
+{
+  "preset": "react-native",
+  "setupFilesAfterEnv": ["@testing-library/jest-native/extend-expect"],
+  "cacheDirectory": "./cache",
+  "coverageThreshold": {
+      "global": {
+        "statements": 80,
+        "ts-jest": {
+            "tsConfig": "tsconfig.jest.json"
+            }
+      }
+    },
+   "transformIgnorePatterns": [
+    "node_modules/(?!@react-native|react-native|@react-navigation/stack|@react-navigation/native|@react-navigation/bottom-tabs|@react-native-community)"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "local_modules",
+    "<rootDir>/src/"
+  ],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "/local_modules/",
+    "<rootDir>/scripts/",
+    "<rootDir>/src/types/",
+    "<rootDir>/src/resources/",
+    "<rootDir>/src/navigation/",
+    "<rootDir>/src/styles/",
+    "<rootDir>/src/utils/devUtils"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx,js,jsx}",
+    "!src/**/*.style.{ts,tsx,js,jsx}",
+    "!**/index.{ts,js}",
+    "!src/navigation/*.{ts,js}",
+    "!src/constants/*.{ts,js}"
+  ],
+   "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mock__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mock__/fileMock.js"
+    },
+    "setupFiles": [
+        "<rootDir>/__mock__/native-components.js"
+    ]
+}
