@@ -22,7 +22,7 @@ Setup react native environment [RN](https://reactnative.dev/docs/environment-set
 
 ## Usage
 - Go to your project's root folder and run `npm install`.
-- If you are using Xcode 12.5 or higher got to /ios and execute `pod install --`repo-update`
+- If you are using Xcode 12.5 or higher got to /ios and execute `pod install`
 - Run `npm run ios` or `npm run android` to start your application!
 - Run `npm run test` to start testing the application application!
 
